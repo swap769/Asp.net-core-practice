@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Registration page</p>
+
+<form class="card">
+    <div class="form-group">
+        <label class="control-label">Username</label>
+        <input class="form-control" placeholder="Enter your username" type="text" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Email</label>
+        <input class="form-control" type="email" placeholder="Enter your email" />
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label">Password</label>
+        <input class="form-control" type="password" placeholder="Enter your password" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">DOB</label>
+        <input class="form-control" type="date" />
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label">Phone no</label>
+        <input class="form-control" type="number" placeholder="Enter your phone no" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Address</label>
+        <input class="form-control" type="text" placeholder="Enter your Address" />
+    </div>
+
+
+    <div>
+        <button class="btn btn-outline-success">Submit</button>
+    </div>
+
+</form>
