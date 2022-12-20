@@ -21,7 +21,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.age)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Standard)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -37,10 +39,13 @@
                 @Html.DisplayFor(modelItem => item.age)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Standard)
+             </td>
+           @* <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
+            </td>*@
         </tr>
 }
     </tbody>

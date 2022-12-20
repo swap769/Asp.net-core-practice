@@ -37,6 +37,7 @@ namespace MyFirstWeb.Controllers
                 id = 1,
                 name = "Harsh",
                 age = 21,
+                Standard=8
             };
 
             Student std2 = new Student()
@@ -44,6 +45,7 @@ namespace MyFirstWeb.Controllers
                 id = 2,
                 name = "Rahul",
                 age = 22,
+                Standard = 6
             };
 
             Student std3 = new Student()
@@ -51,6 +53,7 @@ namespace MyFirstWeb.Controllers
                 id = 3,
                 name = "Shivam",
                 age = 20,
+                Standard = 9
             };
 
             Student std4 = new Student()
@@ -58,6 +61,7 @@ namespace MyFirstWeb.Controllers
                 id = 4,
                 name = "Mohit",
                 age = 25,
+                Standard = 11
             };
 
             List<Student> std_list = new List<Student>();
