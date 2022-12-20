@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyFirstWeb.Models;
 using System.Diagnostics;
+using System.Security.Cryptography.Xml;
 using System.Xml.Linq;
 
 namespace MyFirstWeb.Controllers
@@ -20,7 +21,6 @@ namespace MyFirstWeb.Controllers
         public IActionResult Index()
         {
             return View();
-
         }
 
         [Route("Home/Privacy")]
@@ -92,6 +92,27 @@ namespace MyFirstWeb.Controllers
 
             return View(std_list);
 
+        }
+
+        [Route("Home/Details")]
+        public IActionResult Details()
+        {
+            ViewData["var1"] = "Viewdata-1";
+            ViewData["var2"] = DateTime.Now.ToLongDateString();
+
+
+            string[] Myarr = { "iphone","mi","samsung"};
+
+            ViewData["var3"] = Myarr;
+
+            ViewData["var4"] = new List<string>()
+            {
+                "Circket",
+                "Football",
+                "Hockey"
+            };
+
+            return View();
         }
 
         [Route("Home/Login")]

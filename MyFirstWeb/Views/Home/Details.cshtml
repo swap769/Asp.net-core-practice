@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's Details</p>
+
+<p> Today date @DateTime.Now </p>
+
+<p>year @DateTime.Now.Year</p>
+
+@{
+    string name = "Google";
+    var currentDate = DateTime.Now.ToLongDateString();
+}
+
+<h2>@name</h2>
+<h4>@currentDate</h4>
+
+
+@*@{
+    int percentage = 85;
+    if (percentage > 80)
+    {
+        <h3>Grade A1</h3>
+    }
+    else
+    {
+        <h3>Grade B</h3>
+    }
+}*@
+@*
+@{
+    for(int i = 0; i <10; i++)
+    {
+        <h1>hello</h1>
+    }
+}
+*@
+
+@*@{
+    string[] myarr = { "swap", "allu", "mukesh" };
+    foreach(var item in myarr)
+    {
+        <h3>@item</h3>
+    }
+}
+*@
+
+@ViewData["var1"]
+<br />
+@ViewData["var2"]
+
+<br/>
+
+@{
+    foreach (var item in (string[])ViewData["var3"])
+    {
+        <h3>@item</h3>
+    }
+}
+
+
+@{
+    foreach (var itemdata in (List<string>)ViewData["var4"])
+    {
+        <h5>@itemdata</h5>
+    }
+}
