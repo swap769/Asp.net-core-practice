@@ -70,6 +70,7 @@ namespace MyFirstWeb.Controllers
             std_list.Add(std3);
             std_list.Add(std4);
 
+
             return View(std_list);
          
         }
@@ -115,6 +116,14 @@ namespace MyFirstWeb.Controllers
                 "Football",
                 "Hockey"
             };
+
+            Student sumit = new Student();
+            sumit.name = "sumit kumar";
+            sumit.gender = "Male";
+            sumit.standard = 12;
+           
+
+            ViewData["var5"] = sumit;
 
             return View();
         }
