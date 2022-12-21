@@ -19,7 +19,7 @@
 <h4>@currentDate</h4>
 
 
-@*@{
+@{
     int percentage = 85;
     if (percentage > 80)
     {
@@ -29,24 +29,24 @@
     {
         <h3>Grade B</h3>
     }
-}*@
-@*
+}
+
 @{
     for(int i = 0; i <10; i++)
     {
         <h1>hello</h1>
     }
 }
-*@
 
-@*@{
+
+@{
     string[] myarr = { "swap", "allu", "mukesh" };
     foreach(var item in myarr)
     {
         <h3>@item</h3>
     }
 }
-*@
+
 
 @ViewData["var1"]
 <br />
@@ -55,8 +55,7 @@
 <br/>
 
   
-@*for array 
-*@
+@* for array *@
 
 @{
     foreach (var item in (string[])ViewData["var3"])

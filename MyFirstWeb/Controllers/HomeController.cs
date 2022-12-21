@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyFirstWeb.Models;
+using System.Data;
 using System.Diagnostics;
 using System.Security.Cryptography.Xml;
 using System.Xml.Linq;
@@ -26,7 +27,18 @@ namespace MyFirstWeb.Controllers
         [Route("Home/Privacy")]
         public IActionResult Privacy()
         {
-            return View();
+            ViewBag.var1 = "Currently data from Viewbag";
+            ViewBag.var2 = DateTime.Now.ToShortTimeString();
+            string[] arr = { "Apple", "Mango", "Orange" };
+
+            ViewBag.var3 = arr;
+            ViewBag.var4 = new List<string>()
+            {
+                "Gta",
+                "snow",
+                "Hill climb"
+            };
+                return View();
         }
 
         [Route("Home/StudentData")]
