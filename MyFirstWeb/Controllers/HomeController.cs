@@ -108,6 +108,14 @@ namespace MyFirstWeb.Controllers
 
             std_list.Add(std5);
 
+            Employee aryan = new Employee();
+            aryan.name = "aryan kumar";
+            aryan.city = "Noida";
+            aryan.designation = "Software Engineer";
+           
+
+            ViewBag.var6 = aryan;
+
             return View(std_list);
 
         }

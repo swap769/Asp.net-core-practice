@@ -48,3 +48,25 @@
         }
     </tbody>
 </table>
+
+@{
+    var data = ViewBag.var6;
+}
+<table class="table"">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>City</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>@data.name</td>
+        <td>@data.city</td>
+        <td>@data.designation</td>
+    </tr>
+    </tbody>
+</table>
+
+
