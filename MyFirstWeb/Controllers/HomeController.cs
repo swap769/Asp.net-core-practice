@@ -36,7 +36,8 @@ namespace MyFirstWeb.Controllers
             {
                 "Gta",
                 "snow",
-                "Hill climb"
+                "Hill climb",
+                "motor",
             };
                 return View();
         }
