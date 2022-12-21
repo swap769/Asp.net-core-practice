@@ -37,7 +37,7 @@ namespace MyFirstWeb.Controllers
                 "Gta",
                 "snow",
                 "Hill climb",
-                "motor",
+               
             };
                 return View();
         }
