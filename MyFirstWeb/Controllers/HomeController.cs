@@ -111,7 +111,7 @@ namespace MyFirstWeb.Controllers
             Employee aryan = new Employee();
             aryan.name = "aryan Singh";
             aryan.city = "Noida";
-            aryan.designation = "Software Engineer";
+            aryan.designation = "Software Engineers";
            
 
             ViewBag.var6 = aryan;
