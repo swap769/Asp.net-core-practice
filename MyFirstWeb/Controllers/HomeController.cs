@@ -109,7 +109,7 @@ namespace MyFirstWeb.Controllers
             std_list.Add(std5);
 
             Employee aryan = new Employee();
-            aryan.name = "aryan kumar";
+            aryan.name = "aryan Singh";
             aryan.city = "Noida";
             aryan.designation = "Software Engineer";
            
