@@ -116,6 +116,8 @@ namespace MyFirstWeb.Controllers
 
             ViewBag.var6 = aryan;
 
+            TempData.keep("swap");
+
             return View(std_list);
 
         }
@@ -169,9 +171,10 @@ namespace MyFirstWeb.Controllers
             TempData["var3"] = "Temp Data";
 
             string[] arr = { "arya", "sumit", "sonu" };
-            TempData["var4"] = arr;
+            TempData["swap"] = arr;
 
-             return View();
+
+            return View();
          }
 
 

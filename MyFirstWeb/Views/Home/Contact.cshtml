@@ -5,6 +5,16 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>contact</p>
+
 @ViewBag.var2
 @ViewData["var1"]
 @TempData["var3"]
+
+@*
+@{
+    foreach (var item in (string[])TempData["var4"])
+    {
+        <h4>@item</h4>
+    }
+}
+*@
