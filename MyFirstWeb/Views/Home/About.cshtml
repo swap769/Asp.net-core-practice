@@ -69,4 +69,15 @@
     </tbody>
 </table>
 
+<h3>
+    @ViewData["var1"]
+    <br/>
+    @TempData["var3"]
+</h3>
 
+@{
+    foreach (var item in (string[])TempData["var4"])
+    {
+        <h4>@item</h4>
+    }
+}

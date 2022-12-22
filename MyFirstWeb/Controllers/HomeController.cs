@@ -161,6 +161,19 @@ namespace MyFirstWeb.Controllers
             return View();
         }
 
+        //[Route("Home/Contact")]
+        public IActionResult Contact()
+        {
+            ViewData["var1"] = "ViewData";
+            ViewBag.var2 = "viewbag";
+            TempData["var3"] = "Temp Data";
+
+            string[] arr = { "arya", "sumit", "sonu" };
+            TempData["var4"] = arr;
+
+             return View();
+         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
