@@ -32,19 +32,23 @@
 }
 
 @{
-    for(int i = 0; i <10; i++)
+    for(int i = 0; i <3; i++)
     {
         <h1>hello</h1>
     }
 }
 
-@{
-    foreach (var itemd in (string[])TempData["check"])
+
+@TempData["var10"];
+
+@*@{
+    foreach (var itemd in (string[])TempData["var3"])
     {
         <h4>@itemd</h4>
     }
 }
 
+*@
 @{
     string[] myarr = { "swap", "allu", "mukesh" };
     foreach(var item in myarr)

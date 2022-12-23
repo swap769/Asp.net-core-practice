@@ -23,7 +23,17 @@ namespace MyFirstWeb.Controllers
         {
             return View();
         }
+        [Route("Home/Login")]
+        public IActionResult Login()
+        {
+            return View();
+        }
 
+        [Route("Home/Registration")]
+        public IActionResult Registration()
+        {
+            return View();
+        }
         [Route("Home/Privacy")]
         public IActionResult Privacy()
         {
@@ -144,38 +154,27 @@ namespace MyFirstWeb.Controllers
             sumit.standard = 12;
            
 
-            ViewData["swap"] = sumit;
+            ViewData["var5"] = sumit;
 
-            TempData.Keep("check");
+            TempData.Keep("var10");
 
             return View();
+
         }
 
-        [Route("Home/Login")]
-        public IActionResult Login()
-        {
-            return View();
-        }
 
-        [Route("Home/Registration")]
-        public IActionResult Registration()
-        {
-            return View();
-        }
-
-        //[Route("Home/Contact")]
+        [Route("Home/Contact")]
         public IActionResult Contact()
         {
             ViewData["var1"] = "ViewData";
             ViewBag.var2 = "viewbag";
-            TempData["var3"] = "Temp Data";
+            TempData["var10"] = "Temp Data";
 
             string[] arr = { "arya", "sumit", "sonu" };
             TempData["check"] = arr;
 
-           
-
             return View();
+            
          }
 
 
