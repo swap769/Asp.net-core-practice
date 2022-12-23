@@ -38,6 +38,12 @@
     }
 }
 
+@{
+    foreach (var itemd in (string[])TempData["check"])
+    {
+        <h4>@itemd</h4>
+    }
+}
 
 @{
     string[] myarr = { "swap", "allu", "mukesh" };
@@ -79,6 +85,8 @@
     
     <p>studentname = @x.name <br/> Gender = @x.gender <br/> Age = @x.standard</p>
 }
+
+
 
 
 

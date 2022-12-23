@@ -71,13 +71,7 @@
 
 <h3>
     @ViewData["var1"]
-    <br/>
+    <br
     @TempData["var3"]
 </h3>
 
-@{
-    foreach (var item in (string[])TempData["var4"])
-    {
-        <h4>@item</h4>
-    }
-}
