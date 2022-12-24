@@ -21,6 +21,7 @@ namespace MyFirstWeb.Controllers
 
         public IActionResult Index()
         {
+            TempData["var10"] = "Temp Data";
             return View();
         }
         [Route("Home/Login")]
@@ -168,7 +169,7 @@ namespace MyFirstWeb.Controllers
         {
             ViewData["var1"] = "ViewData";
             ViewBag.var2 = "viewbag";
-            TempData["var10"] = "Temp Data";
+            
 
             string[] arr = { "arya", "sumit", "sonu" };
             TempData["check"] = arr;
