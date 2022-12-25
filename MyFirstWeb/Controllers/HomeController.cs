@@ -21,13 +21,19 @@ namespace MyFirstWeb.Controllers
 
         public IActionResult Index()
         {
+            Employee emp = new Employee();
+            emp.Name = "sagar";
+            emp.Gender = "Male";
+            emp.Designation = "Developer";
+            return View(emp);
 
-            return View();
         }
         [Route("Home/Login")]
         public IActionResult Login()
         {
+
             return View();
+
         }
 
         [Route("Home/Registration")]
@@ -119,10 +125,10 @@ namespace MyFirstWeb.Controllers
 
             std_list.Add(std5);
 
-            Employee aryan = new Employee();
-            aryan.name = "aryan Singh";
-            aryan.city = "Noida";
-            aryan.designation = "Software Engineers";
+            //Employee aryan = new Employee();
+            //aryan.name = "aryan Singh";
+            //aryan.city = "Noida";
+            //aryan.designation = "Software Engineers";
            
 
             ViewBag.var6 = aryan;
