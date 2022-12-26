@@ -2,11 +2,11 @@
 {
     public class Employee
     {
-        public string Name { get; set; }
-        public string City { get; set; }
-        public string Designation { get; set; }
+        public string name { get; set; }
+        public string city { get; set; }
+        public string designation { get; set; }
 
-        public string Gender { get; set; }
+        public string gender { get; set; }
 
     }
 
