@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyFirstWeb.Models;
 using System.Data;
 using System.Diagnostics;
+using System.Reflection;
 using System.Security.Cryptography.Xml;
 using System.Xml.Linq;
 
@@ -21,8 +22,13 @@ namespace MyFirstWeb.Controllers
 
         public IActionResult Index()
         {
-
-            return View();
+            Customer emp1 = new Customer();
+            emp1.name = "swap";
+            emp1.city = "greater noida";
+            emp1.designation = "developer";
+            emp1.gender = "Male";
+            
+            return View(emp1);
 
         }
         [Route("Home/Login")]
