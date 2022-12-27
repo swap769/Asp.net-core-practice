@@ -7,7 +7,42 @@
 
 <p>Registration page</p>
 
-<form class="card">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 mx-auto">
+            <form asp-action="Index" asp-controller="Home" method="post">
+                <div>
+                    <label class="control-label">Username</label>
+                    <input asp-for="Name" placeholder="Enter Your Name" class="form-control" />
+                </div>
+                <div>
+                    <label class="control-label">Email</label>
+                    <input asp-for="Email" placeholder="Enter Your email" class="form-control" />
+                </div>
+                <div>
+                    <label class="control-label">Date of birth</label>
+                    <input asp-for="Dob" placeholder="Enter Your Dob" class="form-control" />
+                </div>
+                <div>
+                    <label class="control-label">Designation</label>
+                    <input asp-for="Designation" placeholder="Enter Your Designation" class="form-control"/>
+                </div>
+                <div>
+                    <label class="control-label">Salary</label>
+                    <input asp-for="Salary" placeholder="Enter Your Salary" class="form-control"/>
+                </div>
+                <div>
+                    <input type="submit" value="Submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+@*<form class="card">
     <div class="form-group">
         <label class="control-label">Username</label>
         <input class="form-control" placeholder="Enter your username" type="text" />
@@ -45,8 +80,5 @@
         <button class="btn btn-outline-success">Submit</button>
     </div>
 
-</form>
+</form>*@
 
-<form asp-action="Index" asp-controller="Home" method="post"> 
-
-</form>
