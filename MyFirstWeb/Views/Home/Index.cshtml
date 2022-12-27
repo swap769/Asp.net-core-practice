@@ -13,18 +13,10 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                Name
-            </th>
-            <th>
-                Gender
-            </th>
-            <th>
-                Degisnation
-            </th>
-            <th>
-                City
-            </th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Degisnation</th>
+            <th>City</th>
            
         </tr>
     </thead>
@@ -32,18 +24,10 @@
         @foreach(var item in Model)
         {
             <tr>
-                <td>
-                    @item.name            
-                </td>
-                <td>
-                    @item.gender
-                </td>
-                <td>
-                    @item.designation
-                </td>  
-                <td>
-                    @item.city
-                </td>
+                <td>@item.name</td>
+                <td>@item.gender</td>
+                <td>@item.designation</td>  
+                <td>@item.city</td>
             </tr>
         }
     </tbody>
@@ -77,6 +61,7 @@
 @*tag helpers*@
 
 <a href="Home/Details/1">Details</a>
+
 <br />
 
 @*ActionLink("link text","action method","controller")*@
@@ -92,3 +77,7 @@
 <br />
 
 <a asp-asp-controller="Home" asp-action="Details" asp-route-id="1">Details-4</a>
+
+
+
+

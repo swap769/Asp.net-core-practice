@@ -49,6 +49,7 @@ namespace MyFirstWeb.Controllers
             return View(mylist);
 
         }
+
         [Route("Home/Login")]
         public IActionResult Login()
         {
@@ -62,6 +63,7 @@ namespace MyFirstWeb.Controllers
         {
             return View();
         }
+
         [Route("Home/Privacy")]
         public IActionResult Privacy()
         {
@@ -145,7 +147,6 @@ namespace MyFirstWeb.Controllers
             aryan.city = "Noida";
             aryan.designation = "Software Engineers";
 
-
             ViewBag.var6 = aryan;
 
             return View(std_list);
@@ -157,7 +158,6 @@ namespace MyFirstWeb.Controllers
         {
             ViewData["var1"] = "Viewdata-1";
             ViewData["var2"] = DateTime.Now.ToLongDateString();
-
 
             string[] Myarr = { "iphone","mi","samsung"};
 
@@ -175,7 +175,6 @@ namespace MyFirstWeb.Controllers
             sumit.gender = "Male";
             sumit.standard = 12;
            
-
             ViewData["var5"] = sumit;
 
             TempData.Keep("var10");
@@ -184,25 +183,21 @@ namespace MyFirstWeb.Controllers
 
         }
 
-
         [Route("Home/Contact")]
         public IActionResult Contact()
         {
             ViewData["var1"] = "ViewData";
             ViewBag.var2 = "viewbag";
             
-
             string[] arr = { "arya", "sumit", "sonu" };
 
             TempData["check"] = arr;
 
             TempData["var10"] = "Temp Data 10";
 
-
             return View();
             
          }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
