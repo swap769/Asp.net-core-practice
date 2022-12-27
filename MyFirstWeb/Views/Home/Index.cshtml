@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<MyFirstWeb.Models.Customer>
 @{
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,4 +7,44 @@
 
 <h1>@ViewData["Title"]</h1>
 
+
 <p>Home page </p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Degisnation
+            </th>
+            <th>
+                City
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.name            
+                </td>
+                <td>
+                    @item.gender
+                </td>
+                <td>
+                    @item.designation
+                </td>  
+                <td>
+                    @item.city
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

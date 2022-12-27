@@ -27,8 +27,26 @@ namespace MyFirstWeb.Controllers
             emp1.city = "greater noida";
             emp1.designation = "developer";
             emp1.gender = "Male";
-            
-            return View(emp1);
+
+            Customer emp2 = new Customer();
+            emp2.name = "swap";
+            emp2.city = "greater noida";
+            emp2.designation = "developer";
+            emp2.gender = "Male";
+
+            Customer emp3 = new Customer();
+            emp3.name = "swap";
+            emp3.city = "greater noida";
+            emp3.designation = "developer";
+            emp3.gender = "Male";
+
+            List<Customer> mylist = new List<Customer>();
+
+            mylist.Add(emp1);
+            mylist.Add(emp2);
+            mylist.Add(emp3);
+
+            return View(mylist);
 
         }
         [Route("Home/Login")]
