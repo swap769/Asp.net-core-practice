@@ -152,8 +152,8 @@ namespace MyFirstWeb.Controllers
 
         }
 
-        [Route("Home/Details")]
-        public IActionResult Details()
+        [Route("Home/Details/{id?}")]
+        public IActionResult Details(int id)
         {
             ViewData["var1"] = "Viewdata-1";
             ViewData["var2"] = DateTime.Now.ToLongDateString();
@@ -180,7 +180,7 @@ namespace MyFirstWeb.Controllers
 
             TempData.Keep("var10");
 
-            return View();
+            return View(id);
 
         }
 

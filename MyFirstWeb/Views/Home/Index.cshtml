@@ -49,6 +49,8 @@
     </tbody>
 </table>
 
+                                                        @*for about page*@
+
 @*tag helpers*@
 
 <a href="Home/About">About page-1</a>
@@ -63,3 +65,30 @@
 @*@Url.Action("action-method","controller") *@
 
 <a href="@Url.Action("About","Home")"> About Page-3 </a>
+
+<br/>
+
+<a asp-asp-controller="Home" asp-action="About">About Page-4</a>
+
+<br/>
+
+                                                           @*for details*@
+
+@*tag helpers*@
+
+<a href="Home/Details/1">Details</a>
+<br />
+
+@*ActionLink("link text","action method","controller")*@
+
+@Html.ActionLink("Details-2","Details","Home",new{id=1})
+
+<br />
+
+@*@Url.Action("action-method","controller") *@
+
+<a href="@Url.Action("Details","Home",new{id=1})"> Details-3 </a>
+
+<br />
+
+<a asp-asp-controller="Home" asp-action="Details" asp-route-id="1">Details-4</a>
