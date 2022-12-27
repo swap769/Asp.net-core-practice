@@ -51,9 +51,15 @@
 
 @*tag helpers*@
 
-<a href="Home/About">About page</a>s
+<a href="Home/About">About page-1</a>
 <br/>
 
 @*ActionLink("link text","action method","controller")*@
 
-@Html.ActionLink("About page 1","About","Home")
+@Html.ActionLink("About page-2","About","Home")
+
+<br />
+
+@*@Url.Action("action-method","controller") *@
+
+<a href="@Url.Action("About","Home")"> About Page-3 </a>
