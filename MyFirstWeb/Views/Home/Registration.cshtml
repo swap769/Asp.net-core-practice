@@ -1,4 +1,5 @@
-﻿@{
+﻿@model MyFirstWeb.Models.Userdata
+@{
     ViewData["Title"] = "Registration";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -43,5 +44,9 @@
     <div>
         <button class="btn btn-outline-success">Submit</button>
     </div>
+
+</form>
+
+<form asp-action="Index" asp-controller="Home" method="post"> 
 
 </form>
