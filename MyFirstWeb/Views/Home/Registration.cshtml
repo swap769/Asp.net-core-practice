@@ -25,15 +25,16 @@
                     <input asp-for="Dob" placeholder="Enter Your Dob" class="form-control" />
                 </div>
                 <div>
-                    <label class="control-label">Designation</label>
-                    <input asp-for="Designation" placeholder="Enter Your Designation" class="form-control"/>
+                    <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
+                        <option value="">Select Gender</option>
+                    </select>
                 </div>
                 <div>
                     <label class="control-label">Salary</label>
                     <input asp-for="Salary" placeholder="Enter Your Salary" class="form-control"/>
                 </div>
                 <div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Submit"class="btn btn-primary"/>
                 </div>
             </form>
         </div>

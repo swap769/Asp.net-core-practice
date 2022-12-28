@@ -7,6 +7,12 @@
         public int Dob { get; set; }
         public string Designation { get; set;}
         public int Salary { get; set;}
-      
+        public Gender Gender { get; set; }
+
+    }
+    public enum Gender
+    {
+        MALE,
+        FEMALE,
     }
 }
