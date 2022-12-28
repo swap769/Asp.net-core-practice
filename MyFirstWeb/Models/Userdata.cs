@@ -4,7 +4,7 @@
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public DateOnly Dob { get; set; }
+        public DateTime Dob { get; set; }
         public string Designation { get; set;}
         public int Salary { get; set;}
         public Gender Gender { get; set; }
