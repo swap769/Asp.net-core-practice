@@ -4,8 +4,8 @@ namespace MyFirstWeb.Models
 {
     public class Userdata
     {
+        [Required(ErrorMessage = "Please enter name")]
         public string Name { get; set; }
-        [Required]
         public string Email { get; set; }
         public DateTime Dob { get; set; }
         public string Designation { get; set;}
