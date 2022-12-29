@@ -4,8 +4,8 @@ namespace MyFirstWeb.Models
 {
     public class Userdata
     {
-        [Required]
         public string Name { get; set; }
+        [Required]
         public string Email { get; set; }
         public DateTime Dob { get; set; }
         public string Designation { get; set;}
