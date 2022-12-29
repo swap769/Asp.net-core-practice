@@ -1,7 +1,10 @@
-﻿namespace MyFirstWeb.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MyFirstWeb.Models
 {
     public class Userdata
     {
+        [Required]
         public string Name { get; set; }
         public string Email { get; set; }
         public DateTime Dob { get; set; }
