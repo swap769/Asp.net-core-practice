@@ -4,7 +4,8 @@ namespace MyFirstWeb.Models
 {
     public class Userdata
     {
-        [Required(ErrorMessage = "Please enter name"), MaxLength(30)]
+        [Required(ErrorMessage = "Please Enter Username.."),
+            StringLength(15,MinimumLength =3,ErrorMessage ="Name must be within 3 to 15 character")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please enter email")]

@@ -67,15 +67,20 @@ namespace MyFirstWeb.Controllers
         [HttpPost]
         public string Index(Userdata e)
         {
-            if(ModelState.IsValid)
-            {
-                return "Name = " + e.Name + "Email = " + e.Email + "Dob = " + e.Dob + "Designation = " + e.Designation +
+            return "Name = " + e.Name + "Email = " + e.Email + "Dob = " + e.Dob + "Designation = " + e.Designation +
                 "Salary = " + e.Salary + "Gender = " + e.Gender + "Married = " + e.Married;
-            }
-            else
-            {
-                return "validation failed";
-            }
+
+
+
+            //if(ModelState.IsValid)
+            //{
+            //    return "Name = " + e.Name + "Email = " + e.Email + "Dob = " + e.Dob + "Designation = " + e.Designation +
+            //    "Salary = " + e.Salary + "Gender = " + e.Gender + "Married = " + e.Married;
+            //}
+            //else
+            //{
+            //    return "validation failed";
+            //}
 
         }
 
