@@ -68,7 +68,7 @@ namespace MyFirstWeb.Controllers
         public string Index(Userdata e)
         {
             return "Name = " + e.Name + "Email = " + e.Email + "Dob = " + e.Dob + "Designation = " + e.Designation +
-                "Salary = " + e.Salary + "Gender = " + e.Gender + "Married = " + e.Married;
+                "Salary = " + e.Salary + "Gender = " + e.Gender + "Married = " + e.Married + "Age = " + e.Age;
 
 
 
