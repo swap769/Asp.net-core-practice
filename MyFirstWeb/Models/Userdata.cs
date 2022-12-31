@@ -28,6 +28,9 @@ namespace MyFirstWeb.Models
         [Required(ErrorMessage ="please enter age"),Range(18,60)]
         public int Age { get; set; }
 
+        [Required(ErrorMessage = "please enter password")]
+        public string? Password { get; set; }
+
     }
     public enum Gender
     {
