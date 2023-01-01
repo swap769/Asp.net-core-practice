@@ -28,7 +28,9 @@ namespace MyFirstWeb.Models
         [Required(ErrorMessage ="please enter age"),Range(18,60)]
         public int Age { get; set; }
 
-        [Required(ErrorMessage = "please enter password")]
+        [Required(ErrorMessage = "please enter password"),
+            RegularExpression(@"(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$",
+            ErrorMessage ="Minimum 8 character with uparcase,lowercase alphabets,numbers and special symbols")]
         public string? Password { get; set; }
 
     }
